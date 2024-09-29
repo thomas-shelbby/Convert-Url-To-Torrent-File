@@ -1,17 +1,3 @@
-# Torrent Webseed Creator
-Webseeded Torrent Creator using GitHub Actions.
-
-Inspired by [BurnBit †](https://web.archive.org/web/20160304022643/http://burnbit.com/) and [URLHash](http://www.urlhash.com).
-
-Powered by these programs to create a torrent file.
-* [torrenttools](https://github.com/fbdtemme/torrenttools)
-* [mktorrent](https://github.com/pobrn/mktorrent)
-* [py3createtorrent](https://github.com/rsnitsch/py3createtorrent)
-* [torf-cli](https://github.com/rndusr/torf-cli)
-* [dottorrent-cli](https://github.com/kz26/dottorrent-cli)
-
-An alternative to BurnBit and URLHash.
-
 Convert direct HTTP link to .torrent
 
 Your file is then burned into a torrent.
@@ -26,7 +12,7 @@ Combines the best of both worlds (P2P and Direct HTTP Link).
 ## How to use
 1. Create a repository on GitHub using this template by clicking "Use this template" and then click "Create a new repository".
 2. Go to the Actions tab.
-3. Choose a program to use by clicking the name of the program under "All workflows". [Comparison of torrent creators](https://github.com/AnimMouse/torrent-webseed-creator/wiki/Comparison-of-torrent-creators)
+3. Choose a program to use by clicking the name of the program under "All workflows".
 4. Besides the "This workflow has a workflow_dispatch event trigger.", click "Run workflow".
 4. Input the required information at the dropdown box. (Example inputs are predefined.)
    * Name: The name of the torrent file.
@@ -43,8 +29,7 @@ Combines the best of both worlds (P2P and Direct HTTP Link).
 5. Wait for it to finish downloading and hashing.
 6. After it says passing on GitHub Actions, click the workflow run that has been created and download the torrent file on Artifacts.
 
-For a step by step instruction with screenshots, go to my [website](https://www.animmouse.com/p/how-to-use-torrent-webseed-creator/).\
-You can also commission me on [Ko-fi](https://ko-fi.com/animmouse/commissions) so I'll do the work for you.
+For a step by step instruction with screenshots, go to this [website](https://www.animmouse.com/p/how-to-use-torrent-webseed-creator/).\
 
 ### URL requirements
 1. URL must be accessible without cookies. [Source](http://www.urlhash.com)
@@ -61,13 +46,9 @@ You can also commission me on [Ko-fi](https://ko-fi.com/animmouse/commissions) s
 | 8192 KiB   | 23             | 8192             | 23 or  8192K | 8 GiB - 16 GiB     |
 | 16384 KiB  | 24             | 16384            | 24 or 16384K | 16 GiB - 512 GiB   |
 | 32768 KiB  | 25             | 32768            | 25 or 32768K | >512 GiB           |
-
-Source: [Seedboxes.cc](https://community.seedboxes.cc/articles/how-to-create-a-torrent-via-the-command-line)
+|------------|----------------|------------------|--------------|--------------------|
 
 ### File size limit
 As of 2024-02-27
 * Default: ≈20 GB
 * Maximize disk space: ≈101 GB
-
-#### Alternatives
-1. [Torrent Webseed Creator on Colab](https://github.com/AnimMouse/torrent-webseed-creator-colab)
